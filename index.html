@@ -4,234 +4,128 @@
 <meta charset="UTF-8">
 <title>Ziyi Zhou | Statistics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Ziyi Zhou, undergraduate student in Statistics at Guangzhou University, with research interests in statistical modeling, survey analysis, and time series analysis.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --text: #111;
-  --muted: #555;
-  --border: #e5e5e5;
-  --accent: #1a73e8;
-  --bg: #ffffff;
-}
+  /* 基础样式 */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
+  body { line-height:1.6; background:#f8f9fa; color:#333; }
+  a { text-decoration:none; color:#007bff; }
+  a:hover { text-decoration:underline; }
 
-* {
-  box-sizing: border-box;
-}
+  /* Header */
+  header { display:flex; align-items:center; padding:20px 40px; background:#fff; border-bottom:1px solid #eaeaea; }
+  header .photo { width:80px; height:80px; border-radius:50%; object-fit:cover; }
+  header .info { margin-left:20px; }
+  header .info h1 { font-size:28px; font-weight:700; margin-bottom:5px; }
+  header .info p { font-size:14px; color:#555; }
+  header nav { margin-top:10px; }
+  header nav a { margin-right:20px; font-weight:600; color:#555; }
+  header nav a.active { color:#000; border-bottom:2px solid #007bff; padding-bottom:2px; }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
+  /* Container */
+  .container { max-width:900px; margin:40px auto; padding:0 20px; }
 
-/* ===== Layout ===== */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 32px 24px;
-}
+  section { margin-bottom:50px; }
+  section h2 { font-size:22px; font-weight:700; color:#222; margin-bottom:15px; border-left:4px solid #007bff; padding-left:10px; }
 
-/* ===== Header ===== */
-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: start;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 24px;
-}
+  /* Card 样式 */
+  .card { background:#fff; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+  .card h3 { font-size:18px; font-weight:600; margin-bottom:5px; }
+  .card .meta { font-size:13px; color:#777; margin-bottom:10px; }
+  .card ul { list-style-type: disc; padding-left:20px; }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-header p {
-  margin: 6px 0 0;
-  color: var(--muted);
-  max-width: 520px;
-}
-
-.contact {
-  text-align: right;
-  font-size: 14px;
-}
-
-.contact a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-/* ===== Section ===== */
-section {
-  margin-top: 36px;
-}
-
-section h2 {
-  font-size: 20px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 6px;
-}
-
-/* ===== Cards ===== */
-.card {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 16px 18px;
-  margin-bottom: 16px;
-}
-
-.card-title {
-  font-weight: 600;
-}
-
-.card-meta {
-  font-size: 14px;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-
-/* ===== Tags ===== */
-.tags {
-  margin-top: 8px;
-}
-
-.tag {
-  display: inline-block;
-  font-size: 12px;
-  padding: 3px 8px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  margin-right: 6px;
-  margin-top: 4px;
-  color: #333;
-}
-
-/* ===== Footer ===== */
-footer {
-  margin-top: 48px;
-  font-size: 13px;
-  color: var(--muted);
-  text-align: center;
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 768px) {
-  header {
-    grid-template-columns: 1fr;
-  }
-  .contact {
-    text-align: left;
-  }
-}
+  /* Footer */
+  footer { text-align:center; padding:20px; font-size:14px; color:#777; border-top:1px solid #eaeaea; }
 </style>
 </head>
-
 <body>
-<div class="container">
 
-<!-- ===== Header ===== -->
 <header>
-  <div>
+  <img src="assets/ziyi_photo.jpg" alt="Ziyi Zhou" class="photo">
+  <div class="info">
     <h1>Ziyi Zhou</h1>
-    <p>
-      Undergraduate student in Statistics with interests in time series analysis,
-      epidemiological modeling, and applied statistical inference.
-    </p>
-  </div>
-  <div class="contact">
-    <div>Email: <a href="mailto:your@email.com">your@email.com</a></div>
-    <div>GitHub: <a href="https://github.com/cloudcollection" target="_blank">cloudcollection</a></div>
+    <p>Undergraduate Student in Statistics<br>School of Economics and Statistics, Guangzhou University</p>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
-<!-- ===== Education ===== -->
-<section>
-  <h2>Education</h2>
+<main class="container">
+
+<!-- About Section -->
+<section id="about">
+  <h2>About</h2>
+  <p>I am an undergraduate student majoring in Statistics at Guangzhou University (GPA 3.64 / Top 10%). My academic interests focus on statistical modeling, survey analysis, and time series forecasting, and I am preparing for graduate study in Statistics.</p>
+</section>
+
+<!-- Research & Experience Section -->
+<section id="experience">
+  <h2>Research & Experience</h2>
+
   <div class="card">
-    <div class="card-title">B.S. in Statistics</div>
-    <div class="card-meta">Undergraduate | Expected Graduation: 2026</div>
-    <div>
-      Core coursework: Probability Theory, Mathematical Statistics,
-      Regression Analysis, Time Series Analysis.
-    </div>
+    <h3>DataPie Project Group, Tsinghua University</h3>
+    <p class="meta">Research Writing & Data Science Communication · Mar 2025 – Present</p>
+    <p>Translated and authored articles on data science and AI. Created an in-depth visual explanation of Transformer models.</p>
+  </div>
+
+  <div class="card">
+    <h3>Foshan Ancestral Temple Museum</h3>
+    <p class="meta">Data Analysis & Survey Research Assistant · Nov 2024 – Apr 2025</p>
+    <p>Designed questionnaires, analyzed 800+ survey responses using Python, R, SPSS. Applied clustering, logistic regression, and factor analysis.</p>
+  </div>
+
+  <div class="card">
+    <h3>Zhongyan Technology Co., Ltd. (Wenjuan.com)</h3>
+    <p class="meta">Data Analysis Assistant · Jul 2025 – Sep 2025</p>
+    <p>Participated in multiple data analysis projects and teaching material preparation. Applied PCA, K-means, regression, and association rules.</p>
   </div>
 </section>
 
-<!-- ===== Research & Projects ===== -->
-<section>
-  <h2>Research & Projects</h2>
-
+<!-- Methods Section -->
+<section id="methods">
+  <h2>Methods & Tools</h2>
   <div class="card">
-    <div class="card-title">
-      Time Series Analysis of Influenza Incidence
-    </div>
-    <div class="card-meta">
-      Undergraduate Research Project
-    </div>
-    <div>
-      Analyzed temporal patterns of influenza-like illness using
-      meteorological variables and surveillance data.
-    </div>
-    <div class="tags">
-      <span class="tag">Time Series</span>
-      <span class="tag">Epidemiology</span>
-      <span class="tag">Regression</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">
-      Statistical Modeling with Python & R
-    </div>
-    <div class="card-meta">
-      Course & Independent Projects
-    </div>
-    <div>
-      Implemented classical statistical models and data analysis pipelines
-      using Python (NumPy, pandas) and R.
-    </div>
-    <div class="tags">
-      <span class="tag">Python</span>
-      <span class="tag">R</span>
-      <span class="tag">Data Analysis</span>
-    </div>
+    <p><strong>Statistical Methods:</strong> Regression Analysis, Time Series Analysis, Multivariate Analysis, Clustering, Factor Analysis, Hypothesis Testing</p>
+    <p><strong>Programming & Software:</strong> Python, R, MATLAB, SQL, SPSS, Stata, Excel, Git, LaTeX</p>
   </div>
 </section>
 
-<!-- ===== Awards ===== -->
-<section>
-  <h2>Awards</h2>
-
+<!-- Honors Section -->
+<section id="honors">
+  <h2>Honors & Awards</h2>
   <div class="card">
-    <div class="card-title">Academic Scholarship</div>
-    <div class="card-meta">University-level</div>
+    <ul>
+      <li>Mathematical Contest in Modeling (MCM/ICM) – <strong>Honorable Mention</strong> (2025)</li>
+      <li>Zhengda Cup National College Student Market Survey Competition – <strong>First Prize</strong> (2025)</li>
+      <li>National Undergraduate Mathematical Modeling Contest (Guangdong) – <strong>Second Prize</strong> (2024)</li>
+      <li>National Statistical Modeling Competition (Guangdong) – <strong>Second Prize</strong> (2024)</li>
+      <li><strong>First-Class</strong> Comprehensive Scholarship, Guangzhou University (2025)</li>
+      <li><strong>Second-Class</strong> Comprehensive Scholarship, Guangzhou University (2023,2024)</li>
+    </ul>
   </div>
-
 </section>
 
-<!-- ===== Skills ===== -->
-<section>
-  <h2>Skills</h2>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact</h2>
   <div class="card">
-    <div>
-      <strong>Programming:</strong> Python, R, LaTeX<br>
-      <strong>Statistics:</strong> Probability Theory, Regression, Time Series<br>
-      <strong>Tools:</strong> Git, NumPy, pandas
-    </div>
+    <p>Email: <a href="mailto:13828091837@163.com">13828091837@163.com</a></p>
+    <p>GitHub: <a href="https://github.com/cloudcollection" target="_blank">github.com/cloudcollection</a></p>
+    <p>Location: Guangzhou, China</p>
   </div>
 </section>
 
 <footer>
-  © 2025 Ziyi Zhou
+  <p>© Ziyi Zhou</p>
+  <p>Academic homepage for graduate study applications in Statistics.</p>
 </footer>
 
-</div>
+</main>
 </body>
 </html>
