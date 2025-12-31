@@ -2,156 +2,161 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Zhou Ziyi | Statistics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Zhou Ziyi, undergraduate student in Statistics at Guangzhou University, with research interests in statistical modeling, survey analysis, and time series analysis.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Awards | Zhou Ziyi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* 原样式不变 */
-  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
-  body { line-height:1.6; background:#f8f9fa; color:#333; }
-  a { text-decoration:none; color:#007bff; }
-  a:hover { text-decoration:underline; }
+  body {
+    margin:0; font-family:'Inter',sans-serif; line-height:1.7; background:#f4f6f8; color:#333;
+  }
+  a { text-decoration:none; color:inherit; }
 
-  header { display:flex; align-items:center; padding:20px 40px; background:#fff; border-bottom:1px solid #eaeaea; }
-  header .photo { width:80px; height:80px; border-radius:50%; object-fit:cover; }
-  header .info { margin-left:20px; }
-  header .info h1 { font-size:28px; font-weight:700; margin-bottom:5px; }
-  header .info p { font-size:14px; color:#555; }
-  header nav { margin-top:10px; }
-  header nav a { margin-right:20px; font-weight:600; color:#555; }
-  header nav a.active { color:#000; border-bottom:2px solid #007bff; padding-bottom:2px; }
+  header { background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; position:sticky; top:0; z-index:10; }
+  header .logo { font-weight:700; font-size:1.5rem; color:#1e3a8a; }
+  nav ul { display:flex; gap:2rem; list-style:none; margin:0; padding:0; }
+  nav ul li a { font-weight:500; color:#333; transition:color 0.2s; }
+  nav ul li a:hover { color:#1e3a8a; }
 
-  .container { max-width:900px; margin:40px auto; padding:0 20px; }
+  main { max-width:900px; margin:4rem auto; padding:0 1rem; display:flex; flex-direction:column; gap:1.5rem; }
 
-  section { margin-bottom:50px; }
-  section h2 { font-size:22px; font-weight:700; color:#222; margin-bottom:15px; border-left:4px solid #007bff; padding-left:10px; }
+  .card {
+    background:#d9e8f8; border-radius:16px; padding:1rem; box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    display:flex; gap:1rem; align-items:center;
+    opacity:0; transform:translateY(30px);
+    transition:transform 0.5s, box-shadow 0.5s, opacity 0.5s;
+  }
+  .card.visible { opacity:1; transform:translateY(0);}
+  .card:hover { transform:translateY(-5px); box-shadow:0 16px 36px rgba(0,0,0,0.12); }
 
-  .card { background:#fff; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
-  .card h3 { font-size:18px; font-weight:600; margin-bottom:5px; }
-  .card .meta { font-size:13px; color:#777; margin-bottom:10px; }
-  .card ul { list-style-type: disc; padding-left:20px; }
+  .card .time {
+    min-width:80px;
+    font-weight:700;
+    text-align:center;
+    color:#1e3a8a;
+    font-size:0.95rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .card .time .trophy { font-size:1.2rem; margin-top:0.2rem; }
 
-  footer { text-align:center; padding:20px; font-size:14px; color:#777; border-top:1px solid #eaeaea; }
+  .card .content h2 { margin:0 0 0.5rem 0; font-size:1.2rem; color:#111; }
+  .card .content .meta { font-size:0.9rem; color:#555; }
+
+  footer { padding:2rem 0; text-align:center; background:#fff; box-shadow:0 -2px 12px rgba(0,0,0,0.06); color:#555; font-size:0.9rem; margin-top:4rem; }
+
+  @media(max-width:600px){
+    header { padding:1rem; }
+    main { padding:0 1rem; }
+    .card { flex-direction:column; align-items:flex-start; }
+    .card .time { min-width:auto; flex-direction:row; gap:0.5rem; }
+  }
 </style>
 </head>
-
 <body>
-
 <header>
-  <img src="assets/ziyi_photo.jpg" alt="Zhou Ziyi" class="photo">
-  <div class="info">
-    <h1>Zhou Ziyi</h1>
-    <p>
-      Undergraduate Student in Statistics<br>
-      School of Economics and Statistics, Guangzhou University
-    </p>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="awards.html">Awards</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+  <a href="index.html" class="logo">Zhou Ziyi</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="container">
-
-<!-- About Section -->
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I am an undergraduate student majoring in Statistics at Guangzhou University (GPA 3.64 / 4.0, Top 10%). 
-    My academic interests include statistical modeling, survey analysis, and time series forecasting. 
-    I am currently preparing for graduate study in Statistics.
-  </p>
-</section>
-
-<!-- Research & Experience Section -->
-<section id="experience">
-  <h2>Research & Experience</h2>
+<main>
+  <h1>Awards & Honors</h1>
 
   <div class="card">
-    <h3>Tsinghua University · School of Software Engineering · Data Division</h3>
-    <p class="meta">Project Team Member · March 2025 – Present</p>
-    <p>
-      Authored and translated multiple data science articles, including 
-      “Layer-by-Layer Visual Analysis of Transformers,” 
-      “Five Difficulty Levels of AI Agents,” and 
-      “A Comprehensive Analysis of the Multi-Armed Bandit Problem.” 
-      Focused on improving accessibility and clarity in data science communication.
-    </p>
+    <div class="time">
+      2025-05
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>“Chengda Cup” National College Student Market Research & Analysis Competition</h2>
+      <div class="meta">National Level | First Prize</div>
+    </div>
   </div>
 
   <div class="card">
-    <h3>Foshan Ancestral Temple Museum, Planning & Promotion Department</h3>
-    <p class="meta">Data Analysis & Research Assistant · November 2024 – April 2025</p>
-    <p>
-      Participated in a Foshan Social Sciences Association project on intangible cultural heritage (Lion Dance) 
-      and cultural tourism development. Designed questionnaires and collected over 800 survey responses. 
-      Conducted data cleaning, visualization, and statistical modeling using Python, R, and SPSS. 
-      Applied cluster analysis, logistic regression, and factor analysis, and co-authored a research report 
-      providing data-driven recommendations for museum promotion strategies.
-    </p>
+    <div class="time">
+      2025-05
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>Mathematical Contest in Modeling (MCM/ICM), USA</h2>
+      <div class="meta">International Level | Honorable Mention</div>
+    </div>
   </div>
 
   <div class="card">
-    <h3>Zhongyan Technology Co., Ltd. (Questionnaire Network)</h3>
-    <p class="meta">Data Analysis Assistant · July 2025 – September 2025</p>
-    <p>
-      Contributed to SPSSPRO textbook development and multiple applied data analysis projects. 
-      Performed end-to-end data analysis including preprocessing, feature engineering, modeling, 
-      and visualization. Applied PCA, K-means clustering, regression analysis, and Apriori association rule mining.
-    </p>
+    <div class="time">
+      2025-11
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>National College Business Elite Challenge: Cultural Tourism & Exhibition Innovation & Entrepreneurship Practice Competition</h2>
+      <div class="meta">National Level | First Prize</div>
+    </div>
   </div>
-</section>
 
-<!-- Methods Section -->
-<section id="methods">
-  <h2>Methods & Tools</h2>
   <div class="card">
-    <p>
-      <strong>Statistical Methods:</strong> Regression Analysis, Time Series Analysis, Multivariate Analysis, 
-      Clustering, Factor Analysis, Hypothesis Testing
-    </p>
-    <p>
-      <strong>Programming & Software:</strong> Python, R, MATLAB, SQL, SPSS, Stata, Excel, Git, LaTeX
-    </p>
+    <div class="time">
+      2024-12
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>National College Students Mathematical Modeling Competition (Guangdong Region)</h2>
+      <div class="meta">Provincial Level | Second Prize</div>
+    </div>
   </div>
-</section>
 
-<!-- Honors Section -->
-<section id="honors">
-  <h2>Honors & Awards</h2>
   <div class="card">
-    <ul>
-      <li>Mathematical Contest in Modeling (MCM/ICM) — <strong>Honorable Mention</strong> (May 2025)</li>
-      <li>“Chengda Cup” National College Student Market Research & Analysis Competition — <strong>First Prize</strong> (May 2025)</li>
-      <li>National College Students Mathematical Modeling Competition (Guangdong) — <strong>Second Prize</strong> (December 2024)</li>
-      <li>National College Students Statistical Modeling Competition (Guangdong) — <strong>Second Prize</strong> (July 2024)</li>
-      <li>Lanqiao Cup National Software and Information Technology Competition (Guangdong) — <strong>Third Prize</strong> (April 2024)</li>
-      <li>Guangzhou University First-Class & Second-Class Comprehensive Scholarships</li>
-    </ul>
+    <div class="time">
+      2024-07
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>National College Students Statistical Modeling Competition (Guangdong Region)</h2>
+      <div class="meta">Provincial Level | Second Prize</div>
+    </div>
   </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
   <div class="card">
-    <p>Email: <a href="mailto:xchou9378@gmail.com">xchou9378@gmail.com</a></p>
-    <p>Phone: 13828091837</p>
-    <p>GitHub: <a href="https://github.com/cloudcollection" target="_blank">github.com/cloudcollection</a></p>
-    <p>Location: Guangzhou, Guangdong Province, China</p>
+    <div class="time">
+      2024-04
+      <div class="trophy">🏆</div>
+    </div>
+    <div class="content">
+      <h2>Lanqiao Cup National Software and Information Technology Talent Competition (Guangdong Region)</h2>
+      <div class="meta">Provincial Level | Third Prize</div>
+    </div>
   </div>
-</section>
-
-<footer>
-  <p>© Zhou Ziyi</p>
-  <p>Academic homepage for graduate study applications in Statistics.</p>
-</footer>
 
 </main>
+
+<footer>
+  <p>© <span id="year"></span> Zhou Ziyi. All rights reserved.</p>
+  <p>Statistics Undergraduate Portfolio · Awards</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.2});
+  cards.forEach(card => observer.observe(card));
+</script>
 </body>
 </html>
