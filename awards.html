@@ -11,25 +11,48 @@
   }
   a { text-decoration:none; color:inherit; }
 
-  header { background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; position:sticky; top:0; z-index:10; }
+  header {
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
   header .logo { font-weight:700; font-size:1.5rem; color:#1e3a8a; }
   nav ul { display:flex; gap:2rem; list-style:none; margin:0; padding:0; }
   nav ul li a { font-weight:500; color:#333; transition:color 0.2s; }
   nav ul li a:hover { color:#1e3a8a; }
 
-  main { max-width:900px; margin:4rem auto; padding:0 1rem; display:flex; flex-direction:column; gap:1.5rem; }
+  main {
+    max-width:900px;
+    margin:4rem auto;
+    padding:0 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+  }
 
   .card {
-    background:#d9e8f8; border-radius:16px; padding:1rem; box-shadow:0 10px 20px rgba(0,0,0,0.08);
-    display:flex; gap:1rem; align-items:center;
-    opacity:0; transform:translateY(30px);
+    background:#d9e8f8;
+    border-radius:16px;
+    padding:1rem;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    opacity:0;
+    transform:translateY(30px);
     transition:transform 0.5s, box-shadow 0.5s, opacity 0.5s;
   }
-  .card.visible { opacity:1; transform:translateY(0);}
+  .card.visible { opacity:1; transform:translateY(0); }
   .card:hover { transform:translateY(-5px); box-shadow:0 16px 36px rgba(0,0,0,0.12); }
 
   .card .time {
-    min-width:80px;
+    min-width:90px;
     font-weight:700;
     text-align:center;
     color:#1e3a8a;
@@ -41,20 +64,35 @@
   }
   .card .time .trophy { font-size:1.2rem; margin-top:0.2rem; }
 
-  .card .content h2 { margin:0 0 0.5rem 0; font-size:1.2rem; color:#111; }
-  .card .content .meta { font-size:0.9rem; color:#555; }
+  .card .content h2 {
+    margin:0 0 0.4rem 0;
+    font-size:1.15rem;
+    color:#111;
+  }
+  .card .content .meta {
+    font-size:0.9rem;
+    color:#555;
+  }
 
-  footer { padding:2rem 0; text-align:center; background:#fff; box-shadow:0 -2px 12px rgba(0,0,0,0.06); color:#555; font-size:0.9rem; margin-top:4rem; }
+  footer {
+    padding:2rem 0;
+    text-align:center;
+    background:#fff;
+    box-shadow:0 -2px 12px rgba(0,0,0,0.06);
+    color:#555;
+    font-size:0.9rem;
+    margin-top:4rem;
+  }
 
   @media(max-width:600px){
     header { padding:1rem; }
-    main { padding:0 1rem; }
     .card { flex-direction:column; align-items:flex-start; }
     .card .time { min-width:auto; flex-direction:row; gap:0.5rem; }
   }
 </style>
 </head>
 <body>
+
 <header>
   <a href="index.html" class="logo">Ziyi Zhou</a>
   <nav>
@@ -71,59 +109,63 @@
 <main>
   <h1>Awards & Honors</h1>
 
-  <!-- Example Award Card -->
+  <!-- Chia Tai Cup -->
   <div class="card">
     <div class="time">
-      2025-06
+      2025-05
       <div class="trophy">🏆</div>
     </div>
     <div class="content">
-      <h2>Chia Tai Cup National Undergraduate Marketing Survey & Analysis Competition</h2>
-      <div class="meta">National Level | First Prize</div>
+      <h2>Chia Tai Cup National Undergraduate Market Survey & Analysis Competition</h2>
+      <div class="meta">National Level · First Prize</div>
     </div>
   </div>
 
+  <!-- MCM/ICM -->
   <div class="card">
     <div class="time">
-      2025-03
+      2025-05
       <div class="trophy">🏆</div>
     </div>
     <div class="content">
       <h2>Mathematical Contest in Modeling (MCM/ICM), USA</h2>
-      <div class="meta">International Level | H Prize</div>
+      <div class="meta">International Level · Honorable Mention</div>
     </div>
   </div>
 
+  <!-- National Mathematical Modeling -->
   <div class="card">
     <div class="time">
-      2024-11
+      2024-12
       <div class="trophy">🏆</div>
     </div>
     <div class="content">
-      <h2>Huashu Cup International Undergraduate Mathematical Modeling Competition</h2>
-      <div class="meta">National Level | M Prize</div>
+      <h2>National Undergraduate Mathematical Modeling Contest</h2>
+      <div class="meta">Provincial Level (Guangdong) · Second Prize</div>
     </div>
   </div>
 
+  <!-- Statistical Modeling -->
   <div class="card">
     <div class="time">
-      2024-08
+      2024-07
       <div class="trophy">🏆</div>
     </div>
     <div class="content">
-      <h2>National Undergraduate Data Analysis Popularization Competition</h2>
-      <div class="meta">National Level | First Prize</div>
+      <h2>National Undergraduate Statistical Modeling Contest</h2>
+      <div class="meta">Provincial Level (Guangdong) · Second Prize</div>
     </div>
   </div>
 
+  <!-- Blue Bridge Cup -->
   <div class="card">
     <div class="time">
-      2023-10
+      2024-04
       <div class="trophy">🏆</div>
     </div>
     <div class="content">
-      <h2>National Undergraduate Data Analysis Popularization Competition</h2>
-      <div class="meta">National Level | First Prize</div>
+      <h2>Blue Bridge Cup National Software and Information Technology Competition</h2>
+      <div class="meta">Provincial Level (Guangdong) · Third Prize</div>
     </div>
   </div>
 
@@ -145,8 +187,10 @@
         observer.unobserve(entry.target);
       }
     });
-  }, {threshold:0.2});
+  }, { threshold: 0.2 });
+
   cards.forEach(card => observer.observe(card));
 </script>
+
 </body>
 </html>
